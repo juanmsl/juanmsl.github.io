@@ -1,0 +1,54 @@
+@import 'shared/scss/index';
+
+.footer {
+  background:
+          url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat,
+          linear-gradient(transparent 50%, $color-primary 50%, $color-primary);
+  height: 500px;
+  position: relative;
+
+  &__box {
+    width: 500px;
+    height: 218px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: $padding;
+    justify-items: center;
+    align-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(white, 0.75);
+    z-index: 10;
+
+    &, &::before {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+      left: 10px;
+      width: calc(100% - 20px);
+      height: calc(100% + 20px);
+      background: white;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: $gutter;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+  }
+}
