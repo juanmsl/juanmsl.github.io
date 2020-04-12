@@ -9,10 +9,10 @@ import 'shared/scss/index.scss';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <App />
     <ViewportSize />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

@@ -4,7 +4,8 @@
           url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat,
           linear-gradient(transparent 50%, $color-primary 50%, $color-primary);
   height: 500px;
-  position: relative;
+  display: flex;
+  justify-content: center;
 
   &__box {
     width: 500px;
@@ -14,12 +15,8 @@
     grid-gap: $padding;
     justify-items: center;
     align-content: center;
-    position: absolute;
+    position: relative;
     margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     background: rgba(white, 0.75);
     z-index: 10;
 
@@ -43,7 +40,7 @@
 
   &__copyright {
     position: absolute;
-    bottom: $gutter;
+    bottom: 63px - 12px;
     text-align: center;
     left: 0;
     right: 0;
