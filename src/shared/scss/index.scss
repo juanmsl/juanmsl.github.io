@@ -8,3 +8,14 @@
 @import "base/base";
 
 @import "layout/grid";
+
+@import "components/atoms/section";
+@import "components/atoms/subtitle";
+@import "components/atoms/title";
+
+@import "components/molecules/social-networks";
+
+@import "components/organisms/footer";
+@import "components/organisms/navbar";
+
+@import "pages/home";

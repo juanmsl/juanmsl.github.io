@@ -1,6 +1,5 @@
 import React from "react";
-import './index.scss';
-import {SocialNetworks, Subtitle} from "shared/components";
+import {SocialNetworks, Subtitle} from "components";
 
 
 class Footer extends React.Component {

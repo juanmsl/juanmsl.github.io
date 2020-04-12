@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ViewportSize from "react-viewport-size";
 
 import App from 'pages';
-import ServiceWorker from 'shared/service-worker';
+import {ServiceWorker} from 'shared/common';
 
 import 'shared/scss/index.scss';
 

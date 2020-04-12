@@ -1,8 +1,6 @@
-@import 'shared/scss/index';
 
 .page-section {
-  width: 100vw;
-  height: 55vw;
+  @include size(100vw, 55vw);
   padding: 0 $section-padding;
   justify-items: center;
   align-content: center;
@@ -11,17 +9,17 @@
   grid-template-columns: 1fr 1fr;
   background: url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat;
 
+  &.with-navbar {
+    grid-template-areas: 'navbar navbar' 'a b';
+    grid-template-rows: auto 1fr;
+  }
+
   &.main {
     background: url('/assets/images/backgrounds/space.png') center center / cover fixed no-repeat;
     color: white;
   }
 
-  &.navbar {
-    grid-template-areas: 'navbar navbar' 'a b';
-    grid-template-rows: auto 1fr;
-  }
-
-  &.blue-full {
+  &.blue-full{
     background: url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat, $color-secondary;
   }
 

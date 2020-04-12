@@ -1,0 +1,51 @@
+{
+	"pages": [
+		{ "name": "Home", "to": "/" },
+		{ "name": "About", "to": "/about" },
+		{ "name": "Services", "to": "/services" },
+		{ "name": "Portfolio", "to": "/portfolio" },
+		{ "name": "Blog", "to": "/blog" }
+	],
+	"contact": [
+		{ "icon": "linkedin", "to": "https://www.linkedin.com/in/juanmsl/" },
+		{ "icon": "github", "to": "https://github.com/juanmsl" },
+		{ "icon": "codepen", "to": "https://codepen.io/juanmsl" },
+		{ "icon": "email", "to": "mailto:juanmsl_pk@hotmail.com" }
+	],
+	"professional_skills": [
+		{
+			"name": "Web Design",
+			"skills": [
+				{ "name": "Figma", "value": 80 },
+				{ "name": "Responsive Design", "value": 80 }
+			]
+		},
+		{
+			"name": "Frontend",
+			"skills": [
+				{ "name": "Angular.js", "value": 50 },
+				{ "name": "Html, Css", "value": 95 },
+				{ "name": "JavaScript/ES6", "value": 85 },
+				{ "name": "React.js", "value": 90 },
+				{ "name": "Sass/Scss", "value": 90 },
+				{ "name": "Vue.js", "value": 5 }
+			]
+		},
+		{
+			"name": "Backend",
+			"skills": [
+				{ "name": "Django", "value": 75 },
+				{ "name": "Node.js", "value": 65 },
+				{ "name": "Python", "value": 80 }
+			]
+		},
+		{
+			"name": "Infrastructure",
+			"skills": [
+				{ "name": "Ansible", "value": 75 },
+				{ "name": "Amazon Web Services (AWS)", "value": 70 },
+				{ "name": "Terraform", "value": 80 }
+			]
+		}
+	]
+}
