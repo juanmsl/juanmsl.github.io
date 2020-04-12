@@ -2,6 +2,7 @@
 .title {
   position: relative;
   margin-bottom: $margin;
+  width: 100%;
 
   &::before {
     content: '';

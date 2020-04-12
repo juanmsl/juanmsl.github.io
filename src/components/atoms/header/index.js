@@ -1,23 +1,21 @@
 import React from "react";
 import {renderClasses} from "shared/common";
+import {Navbar} from "components";
 
 
 const Section = (props) => {
 
-    const {children, header, main, navbar, blue_full, full} = props;
+    const {children, main} = props;
 
     const classes = {
-        'page-section': true,
-        'grid': true,
-        'header': !!header,
-        'main': !!main,
-        'with-navbar': !!navbar,
-        'blue-full': !!blue_full,
-        'full': !!full,
+        'page-header': true,
+        'grid row': true,
+        'main': main !== undefined,
     };
 
     return (
         <section className={renderClasses(classes)}>
+            <Navbar />
             {children}
         </section>
     );

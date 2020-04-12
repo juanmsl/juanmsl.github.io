@@ -1,11 +1,10 @@
 import React from 'react';
-import {Image, Navbar, Section, Footer, Title} from "components";
+import {Image, Section, Footer, Title, Header} from "components";
 
 
 const Home = () => (
     <main>
-        <Section main navbar>
-            <Navbar/>
+        <Header main>
             <section>
                 <h4>Welcome, I’m</h4>
                 <h1>Juan Manuel Sánchez</h1>
@@ -15,7 +14,7 @@ const Home = () => (
                     priorities.</p>
             </section>
             <Image src='sections/photo.svg'/>
-        </Section>
+        </Header>
         <Section>
             <Image src='sections/professional_skills.svg'/>
             <section>

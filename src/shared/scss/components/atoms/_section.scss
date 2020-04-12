@@ -9,6 +9,10 @@
   grid-template-columns: 1fr 1fr;
   background: url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat;
 
+  &.header {
+
+  }
+
   &.with-navbar {
     grid-template-areas: 'navbar navbar' 'a b';
     grid-template-rows: auto 1fr;
