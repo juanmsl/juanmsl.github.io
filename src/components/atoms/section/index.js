@@ -4,14 +4,11 @@ import {renderClasses} from "shared/common";
 
 const Section = (props) => {
 
-    const {children, header, main, navbar, blue_full, full} = props;
+    const {children, blue_full, full} = props;
 
     const classes = {
         'page-section': true,
         'grid': true,
-        'header': !!header,
-        'main': !!main,
-        'with-navbar': !!navbar,
         'blue-full': !!blue_full,
         'full': !!full,
     };
