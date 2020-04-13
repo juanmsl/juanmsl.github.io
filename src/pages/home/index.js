@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Section, Footer, Title, Header} from "components";
+import {Image, Section, Footer, Title, Header, DynamicCategories} from "components";
 
 
 const Home = () => (
@@ -20,6 +20,7 @@ const Home = () => (
             <section>
                 <Title>Professional Skills</Title>
                 <p>I love what I do, and I’m constantly improving my knowledge and skills to be better each day.</p>
+                <DynamicCategories />
             </section>
         </Section>
         <Section>

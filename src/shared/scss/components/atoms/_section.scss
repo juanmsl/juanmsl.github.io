@@ -1,20 +1,26 @@
 
 .page-section {
-  @include size(100vw, 55vw);
-  padding: 0 $section-padding;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  grid-gap: 0 $gutter;
-  grid-template-columns: 1fr 1fr;
+  @include size(100vw, 788px);
   background: url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat;
+  justify-content: center;
+  grid-template-columns: $max-content;
+
+  .container {
+    grid-gap: $gutter;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
 
   &.blue-full{
     background: url('/assets/images/backgrounds/background.svg') center center / cover fixed no-repeat, $color-secondary;
   }
 
   &.full {
-    grid-template-columns: 1fr;
-    justify-items: left;
+    .container {
+      grid-template-columns: 1fr;
+      justify-items: left;
+    }
   }
 }

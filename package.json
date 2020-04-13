@@ -3,13 +3,18 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"d3-ease": "^1.0.6",
 		"node-sass": "^4.13.1",
 		"react": "^16.13.1",
+		"react-circular-progressbar": "^2.0.3",
 		"react-dom": "^16.13.1",
+		"react-move": "^6.1.0",
+		"react-progressbar": "^15.4.1",
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.4.1",
 		"react-transition-group": "^4.3.0",
-		"react-viewport-size": "^1.7.0"
+		"react-viewport-size": "^1.7.0",
+		"react-visibility-sensor": "^5.1.1"
 	},
 	"devDependencies": {
 		"gh-pages": "^2.2.0"

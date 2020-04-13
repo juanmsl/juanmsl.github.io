@@ -7,7 +7,7 @@ class Footer extends React.Component {
         return (
             <footer className='footer'>
                 <section className='footer__box'>
-                    <Subtitle center>Contact me</Subtitle>
+                    <Subtitle center line>Contact me</Subtitle>
                     <SocialNetworks dark />
                 </section>
                 <p className='footer__copyright'>© Copyright 2020 - All Rights Reserved</p>

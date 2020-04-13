@@ -1,0 +1,65 @@
+.circular-loader {
+  width: 70px;
+  text-align: center;
+  grid-gap: $padding;
+  padding: $padding 0;
+
+  &__container {
+    @include size(70px);
+  }
+
+  .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+
+  .CircularProgressbar-path {
+    stroke: $color-default;
+    rotation: 45deg;
+  }
+
+  .CircularProgressbar-text {
+    fill: $color-default;
+    font-size: 1.75em;
+    transform: translateY(2px);
+  }
+
+  &.alert {
+    .CircularProgressbar-path {
+      stroke: $color-alert;
+    }
+
+    .CircularProgressbar-text {
+      fill: $color-alert;
+    }
+  }
+
+  &.warning {
+    .CircularProgressbar-path {
+      stroke: $color-warning;
+    }
+
+    .CircularProgressbar-text {
+      fill: $color-warning;
+    }
+  }
+
+  &.active {
+    .CircularProgressbar-path {
+      stroke: $color-active;
+    }
+
+    .CircularProgressbar-text {
+      fill: $color-active;
+    }
+  }
+
+  &.info {
+    .CircularProgressbar-path {
+      stroke: $color-info;
+    }
+
+    .CircularProgressbar-text {
+      fill: $color-info;
+    }
+  }
+}

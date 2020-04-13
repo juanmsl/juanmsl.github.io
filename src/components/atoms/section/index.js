@@ -15,7 +15,9 @@ const Section = (props) => {
 
     return (
         <section className={renderClasses(classes)}>
-            {children}
+            <section className='grid container'>
+                {children}
+            </section>
         </section>
     );
 };

@@ -1,0 +1,45 @@
+.lineal-loader {
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progressbar-container, .progressbar-progress {
+    border-radius: 50px;
+  }
+
+  .progressbar-container {
+    background: #EDF2F7;
+  }
+
+  .progressbar-progress {
+    background: $color-primary;
+  }
+
+  &.alert {
+    .progressbar-progress {
+      background: $color-alert;
+    }
+  }
+
+  &.warning {
+    .progressbar-progress {
+      background: $color-warning;
+    }
+  }
+
+  &.active {
+    .progressbar-progress {
+      background: $color-active;
+    }
+  }
+
+  &.info {
+    .progressbar-progress {
+      background: $color-info;
+    }
+  }
+}

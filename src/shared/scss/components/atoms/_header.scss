@@ -1,20 +1,28 @@
 
 .page-header {
-  @include size(100vw, 21vw);
-  padding: 0 $section-padding;
+  @include size(100vw, 300px);
   color: white;
   background: url('/assets/images/backgrounds/space.png') center center / cover fixed no-repeat;
-  grid-template-areas: 'navbar' 'a';
-  grid-template-rows: auto 1fr;
-  justify-items: center;
-  align-items: center;
   text-align: center;
+  justify-content: center;
+  grid-template-columns: $max-content;
+
+  .container {
+    grid-template-areas: 'navbar' 'a';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
   &.main {
-    @include size(100vw, 55vw);
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'navbar navbar' 'a b';
-    grid-gap: 0 $gutter;
+    @include size(100vw, 788px);
     text-align: left;
+
+    .container {
+      grid-template-areas: 'navbar navbar' 'a b';
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0 $gutter;
+    }
   }
 }
