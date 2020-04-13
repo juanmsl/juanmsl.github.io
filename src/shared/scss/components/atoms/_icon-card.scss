@@ -3,9 +3,13 @@
   @include size(9.375em);
   background: white;
   border: 1px solid $color-primary;
-  display: grid;
-  grid-gap: $padding;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  text-align: center;
+  align-items: center;
+
+  img {
+    @include size(6em);
+    object-fit: contain;
+  }
 }
