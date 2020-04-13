@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Section, Footer, Title, Header, DynamicCategories} from "components";
+import {Image, Section, Footer, Title, Header, DynamicCategories, ServicesGallery} from "components";
 
 
 const Home = () => (
@@ -33,6 +33,7 @@ const Home = () => (
             <Image src='sections/services.svg'/>
             <section>
                 <Title>What I can do for you</Title>
+                <ServicesGallery />
             </section>
         </Section>
         <Section full>

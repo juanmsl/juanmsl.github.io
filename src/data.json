@@ -19,9 +19,9 @@
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo in, natus officiis quia quod. A minus praesentium quam soluta ut! Aspernatur deleniti dolores explicabo ipsa itaque placeat saepe voluptates.",
 			"skills": [
 				{ "name": "Angular.js", "value": 50 },
-				{ "name": "Html, Css, Js", "value": 95 },
-				{ "name": "React.js", "value": 90 },
-				{ "name": "Sass/Scss", "value": 95 }
+				{ "name": "Html, Css, Js", "value": 98 },
+				{ "name": "React.js", "value": 92 },
+				{ "name": "Sass/Scss", "value": 97 }
 			]
 		},
 		{
@@ -29,7 +29,7 @@
 			"color": "warning",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo in, natus officiis quia quod. A minus praesentium quam soluta ut! Aspernatur deleniti dolores explicabo ipsa itaque placeat saepe voluptates.",
 			"skills": [
-				{ "name": "Django", "value": 75 },
+				{ "name": "Django", "value": 78 },
 				{ "name": "Node.js", "value": 65 },
 				{ "name": "Python", "value": 80 }
 			]
@@ -40,7 +40,7 @@
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo in, natus officiis quia quod. A minus praesentium quam soluta ut! Aspernatur deleniti dolores explicabo ipsa itaque placeat saepe voluptates.",
 			"skills": [
 				{ "name": "Figma", "value": 80 },
-				{ "name": "Responsive Design", "value": 80 }
+				{ "name": "Responsive Web Design", "value": 80 }
 			]
 		},
 		{
@@ -54,5 +54,11 @@
 				{ "name": "Terraform", "value": 80 }
 			]
 		}
+	],
+	"services": [
+		{ "name": "Web Development", "image": "icons/web_development.svg" },
+		{ "name": "App Development", "image": "icons/app_development.svg" },
+		{ "name": "AWS Deployment", "image": "icons/aws_deployment.svg" },
+		{ "name": "Web Design", "image": "icons/web_design.svg" }
 	]
 }
