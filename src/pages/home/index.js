@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Section, Footer, Title, Header, DynamicCategories, ServicesGallery} from "components";
+import {Image, Section, Footer, Title, Header, DynamicCategories, ServicesGallery, PortfolioGallery} from "components";
 
 
 const Home = () => (
@@ -38,6 +38,7 @@ const Home = () => (
         </Section>
         <Section full>
             <Title>My Portfolio</Title>
+            <PortfolioGallery />
         </Section>
         <Footer/>
     </main>

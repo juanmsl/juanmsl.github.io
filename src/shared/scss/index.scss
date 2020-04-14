@@ -11,6 +11,7 @@
 
 @import "layout/grid";
 
+@import "components/atoms/card";
 @import "components/atoms/circular-loader";
 @import "components/atoms/header";
 @import "components/atoms/icon-card";
@@ -23,6 +24,7 @@
 
 @import "components/organisms/footer";
 @import "components/organisms/navbar";
+@import "components/organisms/portfolio-gallery";
 @import "components/organisms/services-gallery";
 
 @import "pages/home";

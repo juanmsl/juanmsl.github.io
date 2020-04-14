@@ -11,7 +11,6 @@ class ServicesGallery extends React.Component {
                 name={service.name}
                 img={service.image}
                 animationClass="animated tada"
-                style={{animationDelay: `${i * 200}ms`}}
             />
         ))
     );

@@ -60,5 +60,27 @@
 		{ "name": "App Development", "image": "icons/app_development.svg" },
 		{ "name": "AWS Deployment", "image": "icons/aws_deployment.svg" },
 		{ "name": "Web Design", "image": "icons/web_design.svg" }
+	],
+	"portfolio": [
+		{
+			"name": "npm - React Json To Form",
+			"image": "portfolio/react_json_to_form.png",
+			"categories": ["Frontend"]
+		},
+		{
+			"name": "npm - React Viewport size",
+			"image": "portfolio/react_viewport_size.png",
+			"categories": ["Frontend"]
+		},
+		{
+			"name": "Django - Auth App",
+			"image": "portfolio/auth_app.png",
+			"categories": ["Backend"]
+		},
+		{
+			"name": "Dashboard",
+			"image": "portfolio/dashboard_app.png",
+			"categories": ["Frontend", "Backend", "Design"]
+		}
 	]
 }

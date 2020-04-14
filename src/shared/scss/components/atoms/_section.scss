@@ -6,7 +6,7 @@
   grid-template-columns: $max-content;
 
   .container {
-    grid-gap: $gutter;
+    grid-gap: 0 $gutter;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
@@ -20,7 +20,8 @@
   &.full {
     .container {
       grid-template-columns: 1fr;
-      justify-items: left;
+      justify-items: stretch;
+      grid-auto-flow: row;
     }
   }
 }

@@ -7,3 +7,4 @@ export {default as Subtitle} from './subtitle';
 export {default as CircularLoader} from './circular-loader';
 export {default as LinealLoader} from './lineal-loader';
 export {default as IconCard} from './icon-card';
+export {default as Card} from './card';
