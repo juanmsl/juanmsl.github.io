@@ -1,8 +1,12 @@
 import React from 'react';
-import {LinealLoader} from "components";
+import { LinealLoader } from "components";
 
 
 class ProfessionalSkills extends React.Component {
+    static defaultProps = {
+        skills: []
+    };
+
     renderSkills = (skills) => (
         skills.map((skill, i) => {
             const {name, value} = skill;
@@ -14,10 +18,6 @@ class ProfessionalSkills extends React.Component {
             />
         })
     );
-
-    static defaultProps = {
-        skills: []
-    };
 
     render() {
         const {skills} = this.props;

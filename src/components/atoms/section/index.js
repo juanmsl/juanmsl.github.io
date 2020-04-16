@@ -1,5 +1,5 @@
 import React from "react";
-import {renderClasses} from "shared/common";
+import { renderClasses } from "shared/common";
 
 
 const Section = (props) => {

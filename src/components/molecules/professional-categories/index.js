@@ -1,5 +1,5 @@
 import React from 'react';
-import {CircularLoader} from "components";
+import { CircularLoader } from "components";
 
 
 class ProfessionalCategories extends React.Component {
