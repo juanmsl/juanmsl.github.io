@@ -1,7 +1,6 @@
 import React from 'react';
-import {ProfessionalCategories} from "components";
+import { ProfessionalCategories, ProfessionalSkills } from "components";
 import data from 'data';
-import {ProfessionalSkills} from "components";
 
 
 class DynamicCategories extends React.Component {

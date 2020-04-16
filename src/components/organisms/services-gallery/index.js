@@ -1,6 +1,6 @@
 import React from 'react';
 import data from 'data';
-import {IconCard} from "components";
+import { IconCard } from "components";
 
 
 class ServicesGallery extends React.Component {

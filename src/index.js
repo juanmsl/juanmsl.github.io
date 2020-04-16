@@ -6,7 +6,6 @@ import App from 'pages';
 import {ServiceWorker} from 'shared/common';
 
 import 'shared/scss/index.scss';
-import 'animate.css/animate.min.css';
 
 
 ReactDOM.render(

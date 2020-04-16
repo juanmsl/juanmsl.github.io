@@ -1,8 +1,8 @@
 import React from "react";
-import {Image, SocialNetworks} from "components";
+import { Image, SocialNetworks } from "components";
 import data from 'data';
-import {Link, withRouter} from "react-router-dom";
-import {renderClasses} from "shared/common/functions";
+import { Link, withRouter } from "react-router-dom";
+import { renderClasses } from "shared/common/functions";
 
 
 class Navbar extends React.Component {

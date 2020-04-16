@@ -1,5 +1,5 @@
 import React from "react";
-import {Image, LinkTo} from "components";
+import { Image, LinkTo } from "components";
 import data from 'data';
 
 

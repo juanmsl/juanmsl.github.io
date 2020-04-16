@@ -1,6 +1,6 @@
 import React from "react";
-import {renderClasses} from "shared/common";
-import {Navbar} from "components";
+import { renderClasses } from "shared/common";
+import { Navbar } from "components";
 
 
 const Section = (props) => {
@@ -16,7 +16,7 @@ const Section = (props) => {
     return (
         <section className={renderClasses(classes)}>
             <section className='grid container'>
-                <Navbar />
+                <Navbar/>
                 {children}
             </section>
         </section>

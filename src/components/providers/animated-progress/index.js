@@ -1,8 +1,12 @@
 import React from "react";
-import {Animate} from "react-move";
+import { Animate } from "react-move";
 
 
 class AnimatedProgressProvider extends React.Component {
+    static defaultProps = {
+        valueStart: 0
+    };
+
     constructor(props) {
         super(props);
         this.state = {
@@ -11,11 +15,7 @@ class AnimatedProgressProvider extends React.Component {
         this.interval = undefined
     }
 
-    static defaultProps = {
-        valueStart: 0
-    };
-
-    toggleIsAnimated = () => this.setState({ isAnimated: !this.state.isAnimated });
+    toggleIsAnimated = () => this.setState({isAnimated: !this.state.isAnimated});
 
     componentDidMount() {
         if (this.props.repeat) {

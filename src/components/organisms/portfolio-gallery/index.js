@@ -1,6 +1,6 @@
 import React from 'react';
 import data from 'data';
-import {Card} from "components";
+import { Card } from "components";
 
 
 class PortfolioGallery extends React.Component {
