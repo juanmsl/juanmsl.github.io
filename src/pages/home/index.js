@@ -1,5 +1,15 @@
 import React from 'react';
-import {Image, Section, Footer, Title, Header, DynamicCategories, ServicesGallery, PortfolioGallery} from "components";
+import {
+    Image,
+    Section,
+    Footer,
+    Title,
+    Header,
+    DynamicCategories,
+    ServicesGallery,
+    PortfolioGallery,
+    Button
+} from "components";
 
 
 const Home = () => (
@@ -12,6 +22,7 @@ const Home = () => (
                 <p>I’m a web developer who is passionate about what I do, programming and design, both of them are my
                     hobbies and my livelihood, making things functional and visually attractive are some of my
                     priorities.</p>
+                <Button className='home-button' to='/assets/docs/cv.pdf'>Download CV</Button>
             </section>
             <Image src='sections/photo.svg'/>
         </Header>
