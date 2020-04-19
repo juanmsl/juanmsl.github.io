@@ -1,0 +1,29 @@
+
+.time-point {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: $padding;
+
+  &__circle {
+    @include size(49px);
+    background: $color-primary;
+    border-radius: 50%;
+    display: block;
+  }
+
+  &__date {
+
+  }
+
+  &__name {
+    color: $color-primary;
+  }
+
+  &__place {
+    color: $color-primary;
+  }
+
+  &__description {
+
+  }
+}

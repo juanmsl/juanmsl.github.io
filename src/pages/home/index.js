@@ -8,7 +8,8 @@ import {
     DynamicCategories,
     ServicesGallery,
     PortfolioGallery,
-    Button
+    Button,
+    Timeline
 } from "components";
 
 
@@ -37,6 +38,7 @@ const Home = () => (
         <Section>
             <section>
                 <Title>My Experience</Title>
+                <Timeline />
             </section>
             <Image src='sections/my_experience.svg'/>
         </Section>

@@ -1,0 +1,35 @@
+
+.timeline {
+  display: grid;
+  grid-auto-rows: auto;
+  align-content: start;
+  grid-gap: 2 * $padding;
+  height: 371px;
+  overflow-y: auto;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    transparent 23px,
+    rgba($color-primary, .5) 23px,
+    rgba($color-primary, .5) 26px,
+    transparent 26px,
+  );
+
+  &::before, &::after {
+    content: '';
+    position: sticky;
+    left: 0;
+    width: 100%;
+    height: $padding * 2;
+  }
+
+  &::before {
+    top: -1px;
+    background: linear-gradient(white, transparent);
+  }
+
+  &::after {
+    bottom: -1px;
+    background: linear-gradient(transparent, white);
+  }
+}
