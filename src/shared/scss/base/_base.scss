@@ -46,6 +46,9 @@ h6 {
 
 p, span, a, label {
   font-size: $p-font-size;
+}
+
+p, a, label {
   padding: $padding / 2 0 $padding;
 }
 
