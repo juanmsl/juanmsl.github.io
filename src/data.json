@@ -85,27 +85,11 @@
 	],
 	"experience": [
 		{
-			"date": "Feb 2015 - Nov 2017",
-			"name": "Web development workshops",
-			"place": "Pontifical Javerian University",
+			"date": "Jan 2020 - Present",
+			"name": "FullStack developer",
+			"place": "MO Tecnologías",
 			"description": [
-				"I teach about HTML5, CSS3 and JavaScript, using tools and frameworks as SCSS, and Pug, their workshops, was focused on frontend development, with examples exposed on my CodePen profile."
-			]
-		},
-		{
-			"date": "Feb 2015 - Nov 2017",
-			"name": "Algorithmic Thinking workshops through the ACM’s student chapter",
-			"place": "Pontifical Javerian University",
-			"description": [
-				"I had to prepare the workshops about variables, conditionals, functions, and basic data structures in C++ and python, to help students to study for their exams."
-			]
-		},
-		{
-			"date": "Feb 2015 - Nov 2017",
-			"name": "Monitor assistant in subjects of Algorithmic Thinking, Computer Programing and Data Structures",
-			"place": "Pontifical Javerian University",
-			"description": [
-				"I had to attend the teacher, answering questions from the students, supporting them in workshops, partials and projects, as well as classes apart from accompaniment in which the students attended with questions."
+				"I’ve been working with Django and Angular creating different web applications; also, I use ReactJS to create different projects in the company, and giving development training and workshops about ReactJS"
 			]
 		},
 		{
@@ -118,11 +102,27 @@
 			]
 		},
 		{
-			"date": "Jan 2020 - Present",
-			"name": "FullStack developer",
-			"place": "MO Tecnologías",
+			"date": "Feb 2015 - Nov 2017",
+			"name": "Monitor assistant in subjects of Algorithmic Thinking, Computer Programing and Data Structures",
+			"place": "Pontifical Javerian University",
 			"description": [
-				"I’ve been working with Django and Angular creating different web applications; also, I use ReactJS to create different projects in the company, and giving development training and workshops about ReactJS"
+				"I had to attend the teacher, answering questions from the students, supporting them in workshops, partials and projects, as well as classes apart from accompaniment in which the students attended with questions."
+			]
+		},
+		{
+			"date": "Feb 2015 - Nov 2017",
+			"name": "Algorithmic Thinking workshops through the ACM’s student chapter",
+			"place": "Pontifical Javerian University",
+			"description": [
+				"I had to prepare the workshops about variables, conditionals, functions, and basic data structures in C++ and python, to help students to study for their exams."
+			]
+		},
+		{
+			"date": "Feb 2015 - Nov 2017",
+			"name": "Web development workshops",
+			"place": "Pontifical Javerian University",
+			"description": [
+				"I teach about HTML5, CSS3 and JavaScript, using tools and frameworks as SCSS, and Pug, their workshops, was focused on frontend development, with examples exposed on my CodePen profile."
 			]
 		}
 	]
