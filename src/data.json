@@ -1,10 +1,10 @@
 {
 	"pages": [
-		{ "name": "Home", "to": "/" },
-		{ "name": "About", "to": "/about" },
-		{ "name": "Services", "to": "/services" },
-		{ "name": "Portfolio", "to": "/portfolio" },
-		{ "name": "Blog", "to": "/blog" }
+		{ "name": "Home", "to": "/", "enabled": false},
+		{ "name": "About", "to": "/about", "enabled": false},
+		{ "name": "Services", "to": "/services", "enabled": false },
+		{ "name": "Portfolio", "to": "/portfolio", "enabled": false },
+		{ "name": "Blog", "to": "/blog", "enabled": false }
 	],
 	"contact": [
 		{ "icon": "linkedin", "to": "https://www.linkedin.com/in/juanmsl/" },
@@ -84,6 +84,14 @@
 		}
 	],
 	"experience": [
+		{
+			"date": "Jun 2020 - Present",
+			"name": "Thecnical leader - Founder team",
+			"place": "Panzofi",
+			"description": [
+				"I’m in charge of AWS architecture, the deployment, and CI/CD for each service; also, I work as fullstack developer being leader in development area working with django and React.\nI was handle all related infrastructure and internal process to the prototype of https://panzofi.com."
+			]
+		},
 		{
 			"date": "Jan 2020 - Present",
 			"name": "FullStack developer",

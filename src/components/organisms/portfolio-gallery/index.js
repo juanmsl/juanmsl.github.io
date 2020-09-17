@@ -20,7 +20,7 @@ class PortfolioGallery extends React.Component {
                 key={i}
                 img={project.image}
                 className='portfolio-gallery__item'
-                animationClass="animated swing"
+                animationClass="animated fadeIn"
             />
         ))
     );

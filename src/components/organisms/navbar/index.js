@@ -7,13 +7,17 @@ import { renderClasses } from "shared/common/functions";
 
 class Navbar extends React.Component {
     renderLinks = (pages) => (
-        pages.map(({name, to}, i) => {
+        pages.map(({name, to, enabled}, i) => {
             const {pathname} = this.props.location;
 
             const classes = {
                 'navbar__pages__item': true,
                 active: pathname === to
             };
+
+            if (enabled === false) {
+                return null;
+            }
 
             return (
                 <Link
