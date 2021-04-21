@@ -1,5 +1,19 @@
-$margin: 1em;
-$padding: 1em;
-$gutter: 2.5em;
-
 $max-content: 1040px;
+
+$gutter: 2.5rem;
+$gutter-5: 0.3125rem;
+$gutter-10: 0.625rem;
+$gutter-16: 1rem;
+$gutter-20: 1.25rem;
+$gutter-40: 2.5rem;
+$gutter-80: 5rem;
+
+$padding: 1rem;
+$margin: 1rem;
+$border-radius: 10px;
+
+$z-index: (
+        navbar-menu: 500,
+        modal: 1000,
+        notification: 2000
+);

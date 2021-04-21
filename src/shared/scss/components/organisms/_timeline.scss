@@ -1,35 +1,106 @@
 
 .timeline {
   display: grid;
-  grid-auto-rows: auto;
+  grid-template-areas: 'companies details';
+  grid-template-columns: auto 1fr;
+  grid-auto-rows: 1fr;
+  align-items: start;
   align-content: start;
   grid-gap: 2 * $padding;
-  height: 371px;
+  height: 420px;
   overflow-y: auto;
   position: relative;
-  background: linear-gradient(
-    90deg,
-    transparent 23px,
-    rgba($color-primary, .5) 23px,
-    rgba($color-primary, .5) 26px,
-    transparent 26px,
-  );
-
-  &::before, &::after {
-    content: '';
-    position: sticky;
-    left: 0;
-    width: 100%;
-    height: $padding * 2;
-  }
 
   &::before {
-    top: -1px;
-    background: linear-gradient(white, transparent);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 49px;
+    background: $color-primary;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
   }
 
-  &::after {
-    bottom: -1px;
-    background: linear-gradient(transparent, white);
+  @for $i from 1 to 10 {
+    &.item-#{$i}::before {
+      top: calc((49px + #{$padding}) * #{$i});
+    }
+  }
+
+  &__companies {
+    grid-area: companies;
+    display: grid;
+    grid-gap: $padding;
+    align-content: start;
+    grid-auto-flow: row;
+    background: linear-gradient(
+      90deg,
+      transparent 2px,
+      rgba($color-primary, .5) 2px,
+      rgba($color-primary, .5) 3px,
+      transparent 3px,
+    );
+  }
+
+  &__company {
+    padding: 0 $padding;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover, &.selected {
+      background: rgba($color-primary, .1);
+    }
+
+    &.selected {
+      color: $color-primary;
+    }
+  }
+
+  &__details {
+    grid-area: details;
+    height: 100%;
+    overflow-y: auto;
+
+    &__name, &__links {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: $gutter-10;
+      justify-content: start;
+      align-items: start;
+    }
+
+    &__links {
+      grid-gap: $gutter-5;
+    }
+
+    &__link {
+      margin: 0;
+    }
+
+    &__position {
+      color: $color-primary;
+    }
+
+    &__skills {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__skill {
+      background: $color-secondary;
+      font-size: $h5-font-size;
+      padding: 0 $padding * 0.5;
+      border-radius: $border-radius;
+      border: 1px solid $color-default;
+      margin: 0 $margin / 2 $margin / 2 0;
+      transition: all .5s ease-out;
+
+      &:hover {
+        color: $color-primary;
+        border-color: $color-primary;
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@ import { renderClasses } from "shared/common/functions";
 
 class Navbar extends React.Component {
     renderLinks = (pages) => (
-        pages.map(({name, to, enabled}, i) => {
+        pages.map(({name, to, href, enabled}, i) => {
             const {pathname} = this.props.location;
 
             const classes = {
@@ -19,15 +19,34 @@ class Navbar extends React.Component {
                 return null;
             }
 
-            return (
-                <Link
-                    to={to}
-                    key={i}
-                    className={renderClasses(classes)}
-                >
-                    {name}
-                </Link>
-            );
+            if (to) {
+                return (
+                    <Link
+                        to={to}
+                        key={i}
+                        className={renderClasses(classes)}
+                    >
+                        {name}
+                    </Link>
+                );
+            }
+
+            if (href) {
+                return (
+                    <a
+                        href={href}
+                        key={i}
+                        target='_blank'
+                        rel="noopener noreferrer"
+                        className={renderClasses(classes)}
+                    >
+                        {name}
+                    </a>
+                );
+            }
+
+            return null;
+
         })
     );
 

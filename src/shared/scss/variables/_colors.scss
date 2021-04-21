@@ -1,13 +1,90 @@
 $color-common: #555555;
+$color-common-contrast: white;
 
 $color-primary: #325CAE;
+$color-primary-contrast: white;
+
 $color-secondary: #F7FAFC;
+$color-secondary-contrast: white;
+
+$color-tertiary: #9bedf8;
+$color-tertiary-contrast: #283552;
 
 $color-active: #13CE66;
+$color-active-contrast: white;
+
 $color-warning: #FFBA5C;
+$color-warning-contrast: white;
+
 $color-info: #1D9AC1;
+$color-info-contrast: white;
+
 $color-alert: #F95F62;
+$color-alert-contrast: white;
+
 $color-default: #EEEEEE;
+$color-default-contrast: #283552;
+
+$color-disabled: #E5E5E5;
+$color-disabled-contrast: white;
+
+$color-gray-1: #252525;
+$color-gray-2: #555555;
+$color-gray-3: #858585;
+$color-gray-4: #B5B5B5;
+$color-gray-5: #E5E5E5;
+$color-gray-6: #F5F5F5;
+
+$colors: (
+        primary: (
+                color: $color-primary,
+                contrast: $color-primary-contrast
+        ),
+        primary-gradient: (
+                color: linear-gradient(-8deg, $color-primary 50%, darken($color-secondary, 25) 50%),
+                contrast: $color-primary-contrast,
+                text-class: false
+        ),
+        secondary: (
+                color: $color-secondary,
+                contrast: $color-secondary-contrast
+        ),
+        tertiary: (
+                color: $color-tertiary,
+                contrast: $color-tertiary-contrast
+        ),
+        active: (
+                color: $color-active,
+                contrast: $color-active-contrast
+        ),
+        warning: (
+                color: $color-warning,
+                contrast: $color-warning-contrast
+        ),
+        info: (
+                color: $color-info,
+                contrast: $color-info-contrast
+        ),
+        alert: (
+                color: $color-alert,
+                contrast: $color-alert-contrast
+        ),
+        default: (
+                color: $color-default,
+                contrast: $color-default-contrast
+        ),
+        disabled: (
+                color: $color-disabled,
+                contrast: $color-disabled-contrast,
+                text-class: false
+        ),
+        common: (
+                color: $color-common,
+                contrast: $color-common-contrast,
+                text-class: false
+        )
+);
+
 
 %primary {
   background: linear-gradient(-8deg, $color-primary 50%, darken($color-primary, 5) 50%);

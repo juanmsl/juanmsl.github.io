@@ -1,0 +1,17 @@
+.no-wrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line {
+  height: 1px;
+  background: $color-default;
+  display: block;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}

@@ -23,7 +23,7 @@ const Home = () => (
                 <p>I’m a web developer who is passionate about what I do, programming and design, both of them are my
                     hobbies and my livelihood, making things functional and visually attractive are some of my
                     priorities.</p>
-                <Button className='home-button' to='/assets/docs/cv.pdf'>Download CV</Button>
+                <Button className='home-button' to='/Resume.pdf'>Download my resume</Button>
             </section>
             <Image src='sections/photo.svg'/>
         </Header>
@@ -35,12 +35,9 @@ const Home = () => (
                 <DynamicCategories />
             </section>
         </Section>
-        <Section>
-            <section>
-                <Title>My Experience</Title>
-                <Timeline />
-            </section>
-            <Image src='sections/my_experience.svg'/>
+        <Section full>
+            <Title>My Experience</Title>
+            <Timeline />
         </Section>
         <Section blue_full>
             <Image src='sections/services.svg'/>
