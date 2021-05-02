@@ -62,6 +62,7 @@ const Timeline = () => {
                 <span className='timeline__details__links'>
                     {links.map(({icon, url}, key) => (
                         <a
+                            key={key}
                             href={url}
                             target='_blank'
                             rel='noopener noreferrer'
